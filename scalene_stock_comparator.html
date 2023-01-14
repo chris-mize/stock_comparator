@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {font-style: italic}
+.r2 {font-weight: bold}
+.r3 {color: #000080; text-decoration-color: #000080; font-weight: bold}
+.r4 {color: #87af00; text-decoration-color: #87af00; font-weight: bold}
+.r5 {color: #7f7f7f; text-decoration-color: #7f7f7f; font-weight: bold}
+.r6 {color: #000080; text-decoration-color: #000080; font-weight: bold; font-style: italic}
+.r7 {color: #87af00; text-decoration-color: #87af00; font-weight: bold; font-style: italic}
+.r8 {color: #7f7f7f; text-decoration-color: #7f7f7f}
+.r9 {color: #000080; text-decoration-color: #000080}
+.r10 {color: #87af00; text-decoration-color: #87af00}
+.r11 {color: #000000; text-decoration-color: #000000; background-color: #f8f8f8}
+.r12 {color: #666666; text-decoration-color: #666666; background-color: #f8f8f8}
+.r13 {color: #ba2121; text-decoration-color: #ba2121; background-color: #f8f8f8}
+.r14 {color: #008000; text-decoration-color: #008000; background-color: #f8f8f8; font-weight: bold}
+.r15 {background-color: #f8f8f8}
+.r16 {color: #800000; text-decoration-color: #800000; font-weight: bold}
+.r17 {color: #008000; text-decoration-color: #008000; background-color: #f8f8f8}
+.r18 {font-weight: bold; font-style: italic}
+.r19 {color: #0000ff; text-decoration-color: #0000ff}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<html>
+<body>
+    <code>
+        <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span class="r1">             C:\Users\chris\Documents\GitHub\stock_comparator\stock_comparator.py: % of time =  99.89% out of  20.08s.             </span>
++---------------------------------------------------------------------------------------------------------------------------------+
+|<span class="r2">      </span>|<span class="r3">Time</span><span class="r2">   </span>|<span class="r3">––––––</span><span class="r2"> </span>|<span class="r3">––––––</span><span class="r2"> </span>|<span class="r4">––––––</span><span class="r2"> </span>|<span class="r2">                                                                                          </span>|
+|<span class="r2"> </span><span class="r5">Line</span><span class="r2"> </span>|<span class="r6">Python</span><span class="r2"> </span>|<span class="r6">native</span><span class="r2"> </span>|<span class="r6">system</span><span class="r2"> </span>|<span class="r7">GPU</span><span class="r2">    </span>|<span class="r2">C:\Users\chris\Documents\GitHub\stock_comparator\stock_comparator.py                      </span>|
+|------+-------+-------+-------+-------+------------------------------------------------------------------------------------------|
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">  364 </span>|<span class="r9">    2% </span>|<span class="r9">    1% </span>|<span class="r9">       </span>|<span class="r10">       </span>|<span class="r11">            data </span><span class="r12">=</span><span class="r11"> pd</span><span class="r12">.</span><span class="r11">read_csv(price_fpath, index_col</span><span class="r12">=</span><span class="r13">&quot;Date&quot;</span><span class="r11">, parse_dates</span><span class="r12">=</span><span class="r14">True</span><span class="r11">)</span><span class="r15">          </span> |
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">  375 </span>|<span class="r9">    2% </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|<span class="r11">            data</span><span class="r12">.</span><span class="r11">dropna(inplace</span><span class="r12">=</span><span class="r14">True</span><span class="r11">)</span><span class="r15">                                                    </span> |
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">  647 </span>|<span class="r16">   21%</span><span class="r9"> </span>|<span class="r16">   11%</span><span class="r9"> </span>|<span class="r9">   1%  </span>|<span class="r16"> 12%</span><span class="r10">   </span>|<span class="r11">        correlation </span><span class="r12">=</span><span class="r11"> correlate(x, y, mode</span><span class="r12">=</span><span class="r13">&quot;full&quot;</span><span class="r11">)</span><span class="r15">                                       </span> |
+|<span class="r8">  648 </span>|<span class="r9">    3% </span>|<span class="r9">    2% </span>|<span class="r9">       </span>|<span class="r10">  2%   </span>|<span class="r11">        lags </span><span class="r12">=</span><span class="r11"> correlation_lags(x</span><span class="r12">.</span><span class="r11">size, y</span><span class="r12">.</span><span class="r11">size, mode</span><span class="r12">=</span><span class="r13">&quot;full&quot;</span><span class="r11">)</span><span class="r15">                             </span> |
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">  851 </span>|<span class="r9">       </span>|<span class="r9">    1% </span>|<span class="r9">       </span>|<span class="r10">       </span>|<span class="r11">        fig_axes </span><span class="r12">=</span><span class="r11"> fig</span><span class="r12">.</span><span class="r11">subplots(</span><span class="r12">3</span><span class="r11">, </span><span class="r12">1</span><span class="r11">)</span><span class="r15">                                                    </span> |
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">  853 </span>|<span class="r9">    1% </span>|<span class="r9">    1% </span>|<span class="r9">       </span>|<span class="r10">  5%   </span>|<span class="r11">        fig_axes[</span><span class="r12">0</span><span class="r11">]</span><span class="r12">.</span><span class="r11">plot(</span><span class="r17">self</span><span class="r12">.</span><span class="r11">stock_data</span><span class="r12">.</span><span class="r11">loc[symbol1][</span><span class="r13">&quot;Adj Close&quot;</span><span class="r11">])</span><span class="r15">                      </span> |
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">  873 </span>|<span class="r16">   19%</span><span class="r9"> </span>|<span class="r16">   14%</span><span class="r9"> </span>|<span class="r9">   6%  </span>|<span class="r16"> 75%</span><span class="r10">   </span>|<span class="r11">        fig</span><span class="r12">.</span><span class="r11">savefig(fpath, bbox_inches</span><span class="r12">=</span><span class="r13">&quot;tight&quot;</span><span class="r11">)</span><span class="r15">                                          </span> |
+|<span class="r8">  ... </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|<span class="r8">      </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|                                                                                          |
+|------+-------+-------+-------+-------+------------------------------------------------------------------------------------------|
+|<span class="r8">      </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r9">       </span>|<span class="r10">       </span>|<span class="r18">function summary for C:\Users\chris\Documents\GitHub\stock_comparator\stock_comparator.py</span> |
+|<span class="r8">  332 </span>|<span class="r9">    4% </span>|<span class="r9">    2% </span>|<span class="r9">       </span>|<span class="r10">  2%   </span>|<span class="r11">StockComparator</span><span class="r12">.</span><span class="r11">load_stock</span><span class="r15">                                                               </span> |
+|<span class="r8">  593 </span>|<span class="r16">   25%</span><span class="r9"> </span>|<span class="r16">   14%</span><span class="r9"> </span>|<span class="r9">   2%  </span>|<span class="r16"> 14%</span><span class="r10">   </span>|<span class="r11">StockComparator</span><span class="r12">.</span><span class="r11">correlate_stock_pair</span><span class="r15">                                                     </span> |
+|<span class="r8">  801 </span>|<span class="r16">   21%</span><span class="r9"> </span>|<span class="r16">   17%</span><span class="r9"> </span>|<span class="r9">   7%  </span>|<span class="r16"> 81%</span><span class="r10">   </span>|<span class="r11">StockComparator</span><span class="r12">.</span><span class="r11">plot_correlation</span><span class="r15">                                                         </span> |
++---------------------------------------------------------------------------------------------------------------------------------+
+generated by the <a class="r19" href="https://github.com/plasma-umass/scalene">scalene</a> profiler                                                                                                   
+</pre>
+    </code>
+</body>
+</html>

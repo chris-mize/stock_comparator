@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+scratch2.py
+usage_examples_unannotated.py
 
 # Distribution / packaging
 .Python
